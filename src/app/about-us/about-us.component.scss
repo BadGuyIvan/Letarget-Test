@@ -1,0 +1,50 @@
+#section_about_us{
+    position: relative;
+    height: 700px;
+    .row{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        img {
+            position: absolute;
+            z-index: 1;
+            top: -30px;
+            right: 0;
+             max-height: 350px;
+             max-width: 700px;
+             box-shadow: 0px 0px 110px -12px rgba(0,0,0,0.51);
+            }
+                img:nth-child(2){
+                    z-index: 2;
+                    top: 230px;
+                    right: 200px;
+                     max-height: 350px;
+                     max-width: 700px;
+                }
+        div[class*=col-]{
+            padding: 0;  
+            .text {
+                margin-top: 25px;
+                margin-left: 50px;
+                padding-bottom: 35px;
+                color: #ffffff;
+            }
+
+            button{
+                margin-bottom: 100px;
+                margin-left: auto;
+                margin-right: 150px;
+                background: none;
+                color: #ffffff;
+                padding: 10px 40px;
+                border: 1px solid #ffffff;
+                &:hover{
+                    background-color: #1b5e20; 
+                    border: 1px solid #1b5e20;
+                }
+            }
+        }
+        .bg-green {
+            background-color: #6cbd70;
+        }
+    }
+}

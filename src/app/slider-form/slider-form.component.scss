@@ -1,0 +1,20 @@
+.form {
+    .d-b{
+        li{
+            width: 200px;
+            color: #878787;
+            background: #ffffff;
+            &:hover{
+                background-color: #4caf50;
+                color: #ffffff;
+            }
+        }
+    }
+    position: absolute;
+    bottom: 0px;
+    background: rgba(57, 86, 72, 0.5);
+    .label {
+        color: #ffffff;
+        font-size: 20px;
+    }
+}

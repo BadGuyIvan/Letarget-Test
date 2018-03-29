@@ -1,0 +1,51 @@
+.section_slide{
+    #carouselExampleIndicators{
+        .carousel-item {
+            img {
+                max-height: 700px;
+            }
+        }
+    
+        .wrapper-company{
+            position: absolute;
+            right: 0;
+            top: 100px;
+            left: 50px;
+            z-index: 15;
+            .company-name {
+                color: #ffffff;
+                width: 450px;
+                font-size: 50px;
+                .company-logo{
+                    color: #ffffff;
+                    margin-top: 25px;
+                    width: 300px;
+                    font-size: 25px;
+                }
+            }
+            .carousel-indicators{
+                position: relative;
+                justify-content: flex-start;
+                margin-top: 25px;
+                margin-right: 0;
+                margin-left: 0px; 
+                .active{
+                    margin-left: 15px;
+                    size: 50%;
+                    transition: size .2s;
+                    background-color: rgba(76, 175, 80, 0.7);
+                    margin-top: -1.5px;
+                    margin-bottom: -1.5px;
+                    height: 13px;
+                    width: 13px;
+                }
+                li {
+                    margin-left: 15px;
+                    background-color: rgba(255, 255, 255, 0.5);;
+                    height: 10px;
+                    width: 10px;
+                }
+            }
+        }
+    }
+}

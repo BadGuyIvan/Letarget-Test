@@ -1,0 +1,29 @@
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+          <div class="contact text-left p-3">
+            {{address}}
+            <ul class="list-unstyled mt-4">
+              <li *ngFor="let phone of phones">
+                {{phone}}
+              </li>
+            </ul>
+            <a href="#">{{email}}</a>
+          </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="menu p-3">
+          <ul class="list-unstyled">
+            <li *ngFor="let item of menu">
+              <a href="#">{{item}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <button>Почати відпочинок</button>
+      </div>
+    </div>
+  </div>
+</div>

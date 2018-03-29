@@ -1,0 +1,56 @@
+.row{
+    margin-bottom: 50px;
+    .moves_col{
+        margin-top: 100px;
+    }
+    ul{
+        .adv{
+            position: relative;
+            height: 350px;
+            width: 350px;
+            background-size: cover;
+            margin-bottom: 15px;
+            .hovered {
+                position:absolute;
+                bottom:0;     
+                color: #ffffff;
+                height: 50%;
+                width: 50%;
+                background-color: rgba(80, 168, 87, 0.5);
+            }
+        }
+        .first-col {
+            &:nth-child(1){
+                background-image: url('../../assets/adv/adv_7.jpg');
+            }
+            &:nth-child(2){
+                background-image: url('../../assets/adv/adv_4.jpg');
+            }
+            &:nth-child(3){
+                background-image: url('../../assets/adv/adv_1.jpg');
+            }
+        }
+        .second-col{
+            &:nth-child(1){
+                background-image: url('../../assets/adv/adv_7.jpg');
+            }
+            &:nth-child(2){
+                background-image: url('../../assets/adv/adv_7.jpg');
+            }
+            &:nth-child(3){
+                background-image: url('../../assets/adv/adv_3.jpg');
+            }
+        }
+        .third-col{
+            &:nth-child(1){
+                background-image: url('../../assets/adv/adv_6.jpg');
+            }
+            &:nth-child(2){
+                background-image: url('../../assets/adv/adv_5.jpg');
+            }
+            &:nth-child(3){
+                background-image: url('../../assets/adv/adv_2.jpg');
+            }
+        }     
+    }
+}

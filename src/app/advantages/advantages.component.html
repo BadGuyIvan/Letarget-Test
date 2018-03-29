@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <ul class="list-unstyled moves_col">
+        <li class="adv first-col" *ngFor="let adv of advantages | slice:0:3; let i = index" 
+          (mouseenter) ="Hovered=i"
+          (mouseleave) ="Hovered=null"
+          >
+          <div class="hovered d-flex justify-content-center align-content-center flex-column text-center" *ngIf="i==Hovered">
+            {{adv}}
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-4">
+        <ul class="list-unstyled mt-5">
+            <li class="adv second-col" *ngFor="let adv of advantages | slice:3:6; let i = index" 
+              (mouseenter) ="Hovered=i+3"
+              (mouseleave) ="Hovered=null">
+            <div class="hovered d-flex justify-content-center align-content-center flex-column text-center" *ngIf="i+3==Hovered">
+              {{adv}}</div>
+            </li>
+          </ul>
+    </div>
+    <div class="col-lg-4">
+        <ul class="list-unstyled moves_col">
+            <li class="adv third-col" *ngFor="let adv of advantages | slice:6:9; let i = index" 
+              (mouseenter) ="Hovered=i+6"
+              (mouseleave) ="Hovered=null">
+            <div class="hovered d-flex justify-content-center align-content-center flex-column text-center" *ngIf="i+6==Hovered">
+              {{adv}}</div>
+            </li>
+          </ul>
+    </div>
+  </div>
+</div>

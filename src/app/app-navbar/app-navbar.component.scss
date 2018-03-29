@@ -1,0 +1,22 @@
+.navbar{
+    position: absolute;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.5);
+    .navbar-nav {
+        .active {
+            .nav-link{
+                color: #ffffff;
+                font-weight: 700;
+            }
+        }
+        .nav-item{
+            .nav-link{
+                color: #000000;
+                font-weight: 700;
+                &:hover {
+                    color: #525252;
+                }
+            }
+        }
+    }
+}
