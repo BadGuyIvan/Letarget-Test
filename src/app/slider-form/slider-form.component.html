@@ -3,8 +3,8 @@
     <div class="label mt-3 mb-4">
       Забронювати номер зараз
     </div>
-    <div class="d-b">
-      <ul class="list-inline mb-4">
+    <div class="container-fluid">
+      <ul class=" d-flex justify-content-around list-inline mb-4">
         <li class="list-inline-item text-left pt-2 pb-2 pl-2" *ngFor="let form_item of form">
           {{form_item}}
           <span [ngSwitch]="form_item" class="pull-right mr-2">
